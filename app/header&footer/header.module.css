@@ -1,0 +1,67 @@
+.dropdown_menu{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 100;
+    background-color: #ffe845;
+}
+.dropdown_menu.show{
+    transform: translateX(-100%);
+    animation: slideLeft .5s ease .5s forwards;
+}
+.dropdown_menu.close{
+    animation: slideRight .5s ease .5s forwards;
+}
+.dropdown_btn{
+    background: none;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+.search{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+}
+.search input{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #ffe845 ;
+    border: none;
+}
+.search input:focus{
+    background-color: #ffe845 ;
+}
+.search button{
+    background-color: black;
+    width: 15%;
+    border: none;
+}
+.search button i{
+    color: #ffe845;
+}
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+        display: none;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100%);
+        display: none;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
