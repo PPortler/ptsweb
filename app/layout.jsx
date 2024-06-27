@@ -7,6 +7,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Header from "./header&footer/header";
 import Footer from "./header&footer/footer";
 import Script from "next/script";
+import '@fontsource/prompt';
+import '@fontsource/silkscreen';
 
 const inter = Inter({ subsets: ["latin"] });
 

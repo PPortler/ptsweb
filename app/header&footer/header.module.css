@@ -1,3 +1,11 @@
+.header_main{
+    background-color: #ffe845;
+    font-family: 'Prompt', sans-serif;
+}
+.header_logo{
+    font-family: 'Silkscreen', system-ui;
+    font-weight: bolder;
+}
 .dropdown_menu{
     position: absolute;
     top: 100%;
@@ -6,6 +14,7 @@
     overflow-y: scroll;
     z-index: 100;
     background-color: #ffe845;
+    height: 100vh;
 }
 .dropdown_menu.show{
     transform: translateX(-100%);
@@ -35,15 +44,23 @@
 }
 .search input:focus{
     background-color: #ffe845 ;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
-.search button{
+.search_btn{
     background-color: black;
-    width: 15%;
     border: none;
 }
-.search button i{
+.search_btn i{
     color: #ffe845;
 }
+.search_btn_close{
+    background-color: #ffe845;
+
+    border: none;
+}
+
 
 
 @keyframes slideRight{

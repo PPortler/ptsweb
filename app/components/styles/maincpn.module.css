@@ -1,0 +1,242 @@
+.maincpn{
+    height: 90vh ;
+    font-family: 'Prompt', sans-serif;
+}
+.maincpn h1{
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-weight: 900; 
+    color: black;
+    text-align: center;
+
+}
+.maincpn p{
+    font-size: 1rem;
+    letter-spacing: 5px;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+    width:0%;
+    white-space: nowrap;
+}
+.maincpn_p_group{
+    box-shadow: 0 0 10px orange;
+}
+.maincpn_p_group :nth-child(1){
+    animation: typing 20s steps(100) forwards,
+    cursor 2.5s step-end alternate forwards;
+}
+.maincpn_p_group :nth-child(2){
+    animation: typing 15s steps(100) 3s forwards,
+             cursor 1.5s step-end alternate infinite 3s;
+}
+
+.maincpn_draw_people{
+    border: solid black 10px;
+    border-radius: 100%;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    z-index: -1;
+}
+.maincpn_draw_people_eye{
+    border: solid black 20px;
+    background-color: #fff;
+    border-radius: 20%;
+    position: absolute;
+    top: 25%;
+    margin: 0 15%;
+    width: 6rem;
+    height: 6rem;
+}
+.maincpn_draw_people_eye_detail{
+    border: solid black 10px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    transform: translateX(50%) translateY(25%);
+    width: 2rem;
+    height: 2rem;
+    animation: dynamicEye 5s infinite ;
+}
+.maincpn_draw_people_mouth{
+    border: solid black 10px ;
+    border-radius: 0 0 1000px 1000px;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 3rem;
+}
+
+.maincpn_draw_people_eye_right{
+    right: 0;
+}
+.maincpn_draw_people_eye_left{
+    left: 0;
+}
+
+.maincpn_animate_item{
+    width: 3rem;
+    height: 3rem;
+    animation: slide-item 5s linear infinite ;
+    z-index: -2;
+}
+
+.maincpn_model{
+    overflow-x: scroll;
+}
+.maincpn_model_img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .maincpn_cloud{
+    position: absolute;
+    top: 10%;
+    width: 10rem;
+    height: 10rem;
+    z-index: -2;
+
+}
+.maincpn_cloud_group {
+    top: 30%;
+    right: 70%;
+}
+.maincpn_cloud_group :nth-child(1){
+    top: 30%;
+    right: 70%;
+}
+.maincpn_cloud_group :nth-child(2){
+    top: 30%;
+    left: 80%;
+} */
+
+@keyframes slide-item {
+    0% {
+        transform: translateX(100vw);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-color:black;
+    }
+    15%{
+        border-color:transparent;
+    }
+    30%{
+        border-color:black;
+    }
+    45%{
+        border-color:transparent;
+    }
+    60%{
+        border-color:black;
+    }
+    75%{
+        border-color:transparent;
+    }
+    90%{
+        border-color:black;
+    }
+    100%{
+        border-color: none;
+    }
+}
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    20%{
+        width: 100%;
+    }
+    80%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* @keyframes slideCloud {
+    0%{
+        transform: translateX(50%) ;
+    }
+    25%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    75%{
+        transform: translateX(0) ;
+    }
+    100%{
+        transform: translateX(50%);
+    }
+} */
+
+@keyframes dynamicEye {
+    0%{
+        transform: translateX(100%) translateY(100%);
+    }
+  
+    50%{
+        transform:  translateX(0%) translateY(100%);
+    }
+
+    100%{
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .maincpn p{
+        font-size: 1rem ;
+        letter-spacing: 1px;
+    }
+    .maincpn h1{
+        font-size: 5rem;
+        letter-spacing: 10px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .maincpn p{
+        font-size: .8rem ;
+        letter-spacing: 1px;
+    }
+    .maincpn h1{
+        font-size: 3rem;
+        letter-spacing: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .maincpn p{
+        font-size: .5rem ;
+        letter-spacing: 1px;
+    }
+    .maincpn h1{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+}
+
