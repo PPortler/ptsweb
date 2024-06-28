@@ -3,7 +3,7 @@
     font-family: 'Prompt', sans-serif;
 }
 .maincpn h1{
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 10px;
     font-weight: 900; 
     color: black;
@@ -11,7 +11,7 @@
 
 }
 .maincpn p{
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 5px;
     border-right: 5px solid transparent;
     overflow: hidden;
@@ -76,17 +76,49 @@
 }
 
 .maincpn_animate_item{
-    width: 3rem;
-    height: 3rem;
-    animation: slide-item 5s linear infinite ;
+    width: 4rem;
+    height: 4rem;
+    animation: slide-item 12s linear infinite ;
     z-index: -2;
 }
 
 .maincpn_model{
-    overflow-x: scroll;
+    width: 31.25rem;
+    opacity: 0;
+    animation: fade 1s forwards ;
+}
+.maincpn_model h4{
+    animation: switch-left .5s ,fade 2s forwards;
 }
 .maincpn_model_img{
     width: 100%;
+    height: 100%;
+    animation: fade 1s forwards ;
+}
+.maincpn_model_btn span{
+    color: black;
+}
+.maincpn_model_btn :nth-child(1){
+    left: -15%;
+}
+.maincpn_model_btn :nth-child(2){
+    right: -15%;
+}
+
+.maincpn_model_fade :nth-child(1){
+    width: 0.625rem;
+    background: linear-gradient(to left,rgba(0,0,0,0)0%,#ffe845 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.maincpn_model_fade :nth-child(2){
+    width: 0.625rem;
+    background: linear-gradient(to right,rgba(0,0,0,0)0%,#ffe845 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 100%;
 }
 
@@ -110,6 +142,24 @@
     top: 30%;
     left: 80%;
 } */
+
+@keyframes switch-left {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+
+        transform: translateX(0);
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @keyframes slide-item {
     0% {
@@ -199,12 +249,23 @@
 
 /* Extra extra large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {
-    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-    
+    .maincpn p{
+        font-size: .8rem ;
+        letter-spacing: 1px;
+    }
+    .maincpn h1{
+        font-size: 3.5rem;
+        letter-spacing: 10px;
+    }
+    .maincpn_animate_item{
+        width: 4rem;
+        height: 4rem;
+        animation: slide-item 10s linear infinite ;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -214,8 +275,16 @@
         letter-spacing: 1px;
     }
     .maincpn h1{
-        font-size: 5rem;
+        font-size: 3.5rem;
         letter-spacing: 10px;
+    }
+    .maincpn_model{
+        width: 28rem;
+    }
+    .maincpn_animate_item{
+        width: 3.5rem;
+        height: 3.5rem;
+        animation: slide-item 10s linear infinite ;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -228,6 +297,14 @@
         font-size: 3rem;
         letter-spacing: 10px;
     }
+    .maincpn_model{
+        width: 22rem;
+    }
+    .maincpn_animate_item{
+        width: 3.5rem;
+        height: 3.5rem;
+        animation: slide-item 7s linear infinite ;
+    }
 }
 @media (max-width: 576px) {
     .maincpn p{
@@ -237,6 +314,14 @@
     .maincpn h1{
         font-size: 2rem;
         letter-spacing: 10px;
+    }
+    .maincpn_model{
+        width: 18rem;
+    }
+    .maincpn_animate_item{
+        width: 3rem;
+        height: 3rem;
+        animation: slide-item 5s linear infinite ;
     }
 }
 
