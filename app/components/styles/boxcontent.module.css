@@ -1,0 +1,14 @@
+.box{
+    background-color: #ffe845 ;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.box:hover{
+    background-color: #fff;
+    transform: translateY(-5%);
+}
+
+.box_img{
+    width: 6.25rem;
+    height: 100%;
+}

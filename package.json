@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/prompt": "^5.0.14",
     "@fontsource/silkscreen": "^5.0.20",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "bootstrap5": "^1.1.9",
