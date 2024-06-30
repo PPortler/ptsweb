@@ -28,24 +28,24 @@ export default function Maincpn() {
                 <div className={`${style.maincpn_draw_people_mouth}`}></div>
             </div> */}
 
-            <div style={{ width: "max-content" }}>
-                <h1 className='container fs-lg-1' data-aos="fade">ทำเว็บอะไรดี ?</h1>
+         <div style={{ width: "max-content" }}>
+                <h1 className='container fs-lg-1' data-aos="fade">ทำ เ ว็ บ อ ะ ไ ร ดี ?</h1>
                 <div className={`${style.maincpn_p_group} mt-3 bg-dark text-white p-2 p-sm-3 `} data-aos="fade-up">
                     <p className=' m-0 '>console.log(<span style={{ color: "orange" }}>"รับเขียนเว็บไซต์ ตามความต้องการ"</span>);</p>
                     <p className=' m-0'>console.log(<span style={{ color: "orange" }}>"หรือ ตัดไฟล์ รูป photoshop, adobe, figma etc. เป็น website"</span>);</p>
                 </div>
             </div>
 
-            <div className={`${style.maincpn_animate}  d-flex justify-content-between mt-sm-5 mt-4`}>
+            {/* <div className={`${style.maincpn_animate}  d-flex justify-content-between mt-sm-5 mt-4`}>
                 <Image src="/image/bird2.png" height={1000} width={1000} className={`${style.maincpn_animate_item}`} alt='brid-robot' priority></Image>
-            </div>
+            </div> 
             {/* <div className={`${style.maincpn_cloud_group}`}>
                 <Image src="/image/cloud.png" height={1000} width={1000} className={`${style.maincpn_cloud}`}></Image>
                 <Image src="/image/cloud.png" height={1000} width={1000} className={`${style.maincpn_cloud}`}></Image>
                 <Image src="/image/cloud.png" height={1000} width={1000} className={`${style.maincpn_cloud}`}></Image>
             </div> */}
 
-            <div id='maincpn_slider' className={`carousel slide ${style.maincpn_model} mt-sm-5 mt-3 `} data-aos="fade" data-aos-duration="4000">
+            <div id='maincpn_slider' className={`carousel slide ${style.maincpn_model} mt-sm-5 mt-5 `} data-aos="fade" data-aos-duration="4000">
                 <div className='carousel-inner'>
                     <div className='carousel-item active'>
                         <Link href="#" className='nav-link'>
@@ -55,7 +55,7 @@ export default function Maincpn() {
                     </div>
                     <div className='carousel-item'>
                         <Link href="#" className="nav-link">
-                            <h4 className='h3 text-center mb-3'>เว็บไซต์ อ่านหนังสือ</h4>
+                            <h4 className='h3 text-center mb-3'>เว็บไซต์ การ์ตูน</h4>
                             <Image src="/image/poster_main_1.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster2' priority></Image>
                         </Link>
                     </div>

@@ -3,7 +3,6 @@
 }
 .maincpn h1{
     font-size: 3rem;
-    letter-spacing: 10px;
     font-weight: 900; 
     color: black;
     text-align: center;
@@ -257,7 +256,7 @@
     }
     .maincpn h1{
         font-size: 3.5rem;
-        letter-spacing: 10px;
+    
     }
     .maincpn_animate_item{
         width: 4rem;
@@ -274,7 +273,7 @@
     }
     .maincpn h1{
         font-size: 3.5rem;
-        letter-spacing: 10px;
+
     }
     .maincpn_model{
         width: 28rem;
@@ -293,7 +292,7 @@
     }
     .maincpn h1{
         font-size: 3rem;
-        letter-spacing: 10px;
+   
     }
     .maincpn_model{
         width: 22rem;
@@ -311,7 +310,6 @@
     }
     .maincpn h1{
         font-size: 2rem;
-        letter-spacing: 10px;
     }
     .maincpn_model{
         width: 18rem;

@@ -2,7 +2,7 @@ import style from './styles/textdetail.module.css'
 
 export default function Textdetail(){
     return(
-        <div className={`text-center container mt-5 pt-5 ${style.textdetail} `}>
+        <div className={`text-center container mt-5 ${style.textdetail} `}>
             <h2 className="fw-bold" style={{color:"#039be5"}}
             data-aos="fade-up" >รับออกแบบเว็บไซต์ให้ตรงใจคุณ เพราะการทำเว็บไซต์</h2>
             <h2 className="fw-bold" style={{color:"#01579b"}}

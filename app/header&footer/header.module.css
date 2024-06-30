@@ -3,6 +3,9 @@
     font-family: 'Prompt', sans-serif;
     z-index: 100;
 }
+.header_main div{
+    
+}
 .header_logo{
     font-family: 'Silkscreen', system-ui;
     font-weight: bolder;
@@ -13,28 +16,73 @@
     width: 100%;
     left: 0;
     overflow-y: scroll;
-    
+    transform: translateX(-110%);
     background-color: #ffe845;
     height: 100vh;
+    transition: 0.7s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0,0,0.44);
 }
-.dropdown_menu.show{
-    transform: translateX(-100%);
-    animation: slideLeft .5s ease .5s forwards;
+.dropdown_btn:checked ~ .dropdown_menu{
+    transform: translateX(0);
 }
-.dropdown_menu.close{
-    animation: slideRight .5s ease .5s forwards;
-}
+
 .dropdown_btn{
-    background: none;
-    border: none;
-    transition: all .5s ease-in-out;
+    display: none;
+
 }
+.toggle{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background: none;
+}
+.toggle .common{
+    position: absolute;
+    height: 0.188rem;
+    width: 80%;
+    background-color: black;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s ease;
+}
+.toggle .first{
+    top: 25%;
+    
+}
+.toggle .second{
+    top: 50%;
+}
+.toggle .third{
+    top: 75%;
+}
+.dropdown_btn:checked ~ .toggle .first{
+    left: 2px;
+    top: 14px;
+    transform: rotate(45deg);
+}
+.dropdown_btn:checked ~ .toggle .third{
+    left: 2px;
+    top: 14px;
+    transform: rotate(-45deg);
+}
+.dropdown_btn:checked ~ .toggle .second{
+    opacity: 0;
+
+}
+
 .search{
     position: absolute;
     top: 100%;
     width: 100%;
     left: 0;
     z-index: -1;
+    display: none;
+    transition: .5s ease;
+
 }
 .search input{
     position: absolute;
@@ -63,9 +111,22 @@
     border: none;
 }
 
+.checkSearch{
+    display: none ;
+    visibility: hidden;
+}
+.checkSearch:checked ~ .search{
+    display: block;
+}
 
-
-@keyframes slideRight{
+/* .dropdown_menu.show{
+    transform: translateX(-100%);
+    animation: slideLeft .5s ease .5s forwards;
+}
+.dropdown_menu.close{
+    animation: slideRight .5s ease .5s forwards;
+} */
+/* @keyframes slideRight{
     0%{
         transform: translateX(0);
     }
@@ -83,4 +144,4 @@
     100%{
         transform: translateX(0);
     }
-}
+} */

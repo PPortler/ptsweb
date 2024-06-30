@@ -5,31 +5,41 @@ import style from "./header.module.css";
 import { useState, useEffect } from 'react';
 
 export default function Header() {
-    const [menu, setMenu] = useState("เมนู")
     const [dropdown, setDropdown] = useState(false)
     const [showSearch, setShowSearch] = useState(false)
 
     function switchSearch() {
+        const checkDrop = document.getElementById('dropdown')
+        const checkSearch = document.getElementById('checkSearch')
         setShowSearch(switchS => !switchS);
-        if (dropdown) {
+     
+        if(!showSearch){
+            checkSearch.checked = true;
+            checkDrop.checked = false;
             setDropdown(false)
-            setMenu("เมนู")
+        }else{
+            checkSearch.checked = false
         }
     }
 
     function switchDropdown() {
-        setDropdown(switchD => !switchD);
-        setTimeout(() => {
-            setMenu(!dropdown ? <i className="bi bi-x-lg fw-bolder fs-3 " ></i> : "เมนู")
+        const checkDrop = document.getElementById('dropdown')
+        const checkSearch = document.getElementById('checkSearch')
+        setDropdown(check => !check);
+        if(!dropdown){
+            checkDrop.checked = true;
+            checkSearch.checked = false;
             setShowSearch(false)
-        }, 1000)
+        }else{
+            checkDrop.checked = false;
+        }
     }
     useEffect(() => {
 
     }, [])
     return (
-        <div className={`navbar border-bottom border-3 border-black ${style.header_main} fs-5 position-sticky top-0`}>
-            <div className="container">
+        <div className={` border-bottom border-3 border-black ${style.header_main} fs-5 position-sticky top-0 py-2 py-sm-3`}>
+            <div className="container d-flex justify-content-between align-items-center">
                 <div className={`d-sm-flex d-none`} >
                     <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>เมนู1</Link>
                     <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>เมนู2</Link>
@@ -37,12 +47,15 @@ export default function Header() {
                 </div>
 
                 {/* phone */}
-                <div className="d-sm-none">
-                    <button className={`px-3 ${style.dropdown_btn}`}
-                        onClick={switchDropdown} >
-                        {menu}</button>
+                <div className="d-sm-none d-flex">
+                    <input id="dropdown" type="checkbox" className={`${style.dropdown_btn}`}/>
+                    <button className={`${style.toggle} `} type="checkbox" onClick={switchDropdown}>
+                        <span className={`${style.first} ${style.common}`}></span>
+                        <span className={`${style.second} ${style.common}`}></span>
+                        <span className={`${style.third} ${style.common}`}></span>
+                    </button>
                     <div className={` ${style.dropdown_menu} 
-                        ${dropdown ? style.show : style.close} border-top border-3 border-black`}>
+                      border-top border-3 border-black`}>
                         <div className="container ">
                             <Link href='#' className="nav-link p-3">เมนู1</Link>
                             <Link href='#' className="nav-link p-3">เมนู3</Link>
@@ -62,21 +75,23 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
+
                 <Link href="/" className={`navbar-brand ${style.header_logo} fs-4`}>ptsweb</Link>
+
                 <div className="d-flex d-sm-none">
                     <Link href="#" className="nav-link bi bi-search px-2"
                         onClick={switchSearch}></Link>
                     <Link href="#" className="nav-link bi bi-github px-2"></Link>
                 </div>
-              
+
                 <div className={`d-sm-flex d-none`}>
                     <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`} onClick={switchSearch}>ค้นหา</Link>
                     <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>github</Link>
                     <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>เมนู6</Link>
                 </div>
 
-                <div className={`${style.search} border-top border-bottom border-black border-3`}
-                    style={{ display: showSearch ? "block" : "none" }}>
+                <input id="checkSearch" type="checkbox" className={`${style.checkSearch}`}/>
+                <div className={`${style.search} border-top border-bottom border-black border-3`}>
                     <div className={`input-group `}>
                         <button className={`bi bi-x-lg ${style.search_btn_close} px-3 fs-2`} onClick={switchSearch}></button>
                         <input type="text" className="form-control rounded-0 py-3" placeholder="คุณต้องการค้นหาอะไร ?" />
