@@ -119,6 +119,24 @@
     display: block;
 }
 
+.btn_dropdown_performance{
+    position: relative;
+}
+.btn_dropdown_performance:hover .dropdown_performance{
+    display: block;
+}
+.dropdown_performance{
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    background-color: #ffe845;
+    box-shadow: 0 0 3px rgba(0, 0,0,0.44);
+    display: none;
+}
+.dropdown_performance *:hover{
+    background-color: black;
+    color: white !important;
+}
 /* .dropdown_menu.show{
     transform: translateX(-100%);
     animation: slideLeft .5s ease .5s forwards;

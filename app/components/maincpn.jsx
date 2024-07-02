@@ -16,7 +16,7 @@ export default function Maincpn() {
 
     return (
         <div className={`${style.maincpn} 
-        d-flex flex-column pt-4 align-items-center`}>
+        d-flex flex-column pt-4 align-items-center mt-5 pt-5`}>
 
             {/* <div className={`${style.maincpn_draw_people}`}>
                 <div className={`${style.maincpn_draw_people_eye} ${style.maincpn_draw_people_eye_left}`}>
@@ -28,7 +28,7 @@ export default function Maincpn() {
                 <div className={`${style.maincpn_draw_people_mouth}`}></div>
             </div> */}
 
-         <div style={{ width: "max-content" }}>
+            <div style={{ width: "max-content" }}>
                 <h1 className='container fs-lg-1' data-aos="fade">ทำ เ ว็ บ อ ะ ไ ร ดี ?</h1>
                 <div className={`${style.maincpn_p_group} mt-3 bg-dark text-white p-2 p-sm-3 `} data-aos="fade-up">
                     <p className=' m-0 '>console.log(<span style={{ color: "orange" }}>"รับเขียนเว็บไซต์ ตามความต้องการ"</span>);</p>
@@ -61,7 +61,7 @@ export default function Maincpn() {
                     </div>
                     <div className='carousel-item'>
                         <Link href="#" className='nav-link'>
-                        <h4 className='h3 text-center mb-3'>เว็บไซต์ Portfolio</h4>
+                            <h4 className='h3 text-center mb-3'>เว็บไซต์ Portfolio</h4>
                             <Image src="/image/poster_main_2.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster3' priority></Image>
                         </Link>
                     </div>
