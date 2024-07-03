@@ -57,31 +57,17 @@ export default function Header() {
 
                 {/* phone */}
                 <div className="d-lg-none d-flex toggler">
-                    <input id="dropdown" type="checkbox" className={`${style.dropdown_btn}`} />
-                    <button className={`${style.toggle} `} type="checkbox" onClick={switchDropdown}>
-                        <span className={`${style.first} ${style.common}`}></span>
-                        <span className={`${style.second} ${style.common}`}></span>
-                        <span className={`${style.third} ${style.common}`}></span>
+                    <input id="dropdown" type="checkbox" className={`${style.toggle_check}`} />
+                    <button className={`${style.toggle}`} onClick={switchDropdown}>
+                        <span className={`${style.line} ${style.line_first}`}></span>
+                        <span className={`${style.line} ${style.line_second}`}></span>
+                        <span className={`${style.line} ${style.line_third}`}></span>
                     </button>
-                    <div className={` ${style.dropdown_menu} 
-                      border-top border-3 border-black`}>
-                        <div className="container ">
-                            <Link href='#' className="nav-link p-3">เมนู1</Link>
-                            <Link href='#' className="nav-link p-3">เมนู2</Link>
-                            <Link href='#' className="nav-link p-3">เมนู3</Link>
-                            <Link href='#' className="nav-link  p-3">เมนู4</Link>
-                            <Link href='#' className="nav-link  p-3">เมนู5</Link>
-                            <Link href='#' className="nav-link  p-3">เมนู6</Link>
-                            <div className="border-bottom border-black border-3 my-3 mx-3"></div>
-                            <div className="d-flex flex-wrap py-3">
-                                <Link href="#" className="nav-link col-6 px-3 py-2">เกี่ยวกับฉัน</Link>
-                                <Link href="#" className="nav-link col-6 px-3 py-2">ช่วยเหลือ</Link>
-                                <Link href="#" className="nav-link col-6 px-3 py-2">เกี่ยวกับฉัน</Link>
-                                <Link href="#" className="nav-link col-6 px-3 py-2">เกี่ยวกับฉัน</Link>
-                                <Link href="#" className="nav-link col-6 px-3 py-2">เกี่ยวกับฉัน</Link>
-                                <Link href="#" className="nav-link col-6 px-3 py-2">เกี่ยวกับฉัน</Link>
-                            </div>
-                        </div>
+                    <div className={style.toggle_menu}>
+                        <Link href="#" className={`${style.toggle_item} bi-facebook`}></Link>
+                        <Link href="#" className={`${style.toggle_item} bi-facebook`}></Link>
+                        <Link href="#webproject" className={`${style.toggle_item} bi bi-card-heading`}></Link>
+                        <Link href="#contact" className={`${style.toggle_item} bi bi-person-lines-fill`}></Link>
                     </div>
                 </div>
 

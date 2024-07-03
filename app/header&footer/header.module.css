@@ -3,76 +3,12 @@
     font-family: 'Prompt', sans-serif;
     z-index: 100;
 }
-.header_main div{
-    
-}
+
 .header_logo{
     font-family: 'Silkscreen', system-ui;
     font-weight: bolder;
 }
-.dropdown_menu{
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    overflow-y: scroll;
-    transform: translateX(-110%);
-    background-color: #ffe845;
-    height: 100vh;
-    transition: 0.7s ease;
-    box-shadow: 10px 10px 10px rgba(0, 0,0,0.44);
-}
-.dropdown_btn:checked ~ .dropdown_menu{
-    transform: translateX(0);
-}
 
-.dropdown_btn{
-    display: none;
-
-}
-.toggle{
-    width: 2rem;
-    height: 2rem;
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-    border: none;
-    background: none;
-}
-.toggle .common{
-    position: absolute;
-    height: 0.188rem;
-    width: 80%;
-    background-color: black;
-    border-radius: 10px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: .5s ease;
-}
-.toggle .first{
-    top: 25%;
-    
-}
-.toggle .second{
-    top: 50%;
-}
-.toggle .third{
-    top: 75%;
-}
-.dropdown_btn:checked ~ .toggle .first{
-    left: 2px;
-    top: 14px;
-    transform: rotate(45deg);
-}
-.dropdown_btn:checked ~ .toggle .third{
-    left: 2px;
-    top: 14px;
-    transform: rotate(-45deg);
-}
-.dropdown_btn:checked ~ .toggle .second{
-    opacity: 0;
-
-}
 
 .search{
     position: absolute;
@@ -137,6 +73,88 @@
     background-color: black;
     color: white !important;
 }
+
+.toggle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0,0,0.44);
+    background-color:black;
+    position: relative;
+    z-index: 1;
+}
+.toggle .line{
+    position: absolute;
+    width: 60%;
+    height: 0.2rem;
+    background-color: #ffe845;
+    box-shadow: 0 0 3px rgba(0, 0,0,0.22);
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    left: 50%;
+    top: 0;
+    transition: .5s ease;
+}
+.toggle .line_first{
+    top: 30%;
+}
+.toggle .line_second{
+    top: 50%;
+}
+.toggle .line_third{
+    top: 70%;
+}
+.toggle_check:checked ~ .toggle .line_first{
+    transform: rotate(45deg);
+    top: 14px;
+    left: 6px;
+}
+.toggle_check:checked ~ .toggle .line_third{
+    transform: rotate(-45deg);
+    top: 14px;
+    left: 6px;
+}
+.toggle_check:checked ~ .toggle .line_second{
+    opacity: 0;
+}
+
+.toggle_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe845;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-100%,0);
+    transition: .5s ease;
+    color: black;
+    text-decoration: none;
+}
+.toggle_check{
+    display: none;
+}
+.toggle_check:checked ~ .toggle_menu :nth-child(1){
+    transform: translate(-100%,150%);
+    box-shadow: 0 0 20px rgba(0, 0,0,0.77);
+}
+
+.toggle_check:checked ~ .toggle_menu :nth-child(2){
+    transform: translate(-100%,270%);
+    box-shadow: 0 0 20px rgba(0, 0,0,0.77);
+}
+.toggle_check:checked ~ .toggle_menu :nth-child(3){
+    transform: translate(-100%,390%);
+    box-shadow: 0 0 20px rgba(0, 0,0,0.77);
+}
+.toggle_check:checked ~ .toggle_menu :nth-child(4){
+    transform: translate(-100%,510%);
+    box-shadow: 0 0 20px rgba(0, 0,0,0.77);
+}
+
+
 /* .dropdown_menu.show{
     transform: translateX(-100%);
     animation: slideLeft .5s ease .5s forwards;
