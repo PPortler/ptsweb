@@ -40,11 +40,11 @@ export default function Header() {
     return (
         <div className={` border-bottom border-3 border-black ${style.header_main} fs-5 position-fixed w-100 top-0 py-2 py-sm-3`}>
             <div className="container d-flex justify-content-between align-items-center">
-                <div className={`d-md-flex d-none`} >
-                    <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>เมนู1</Link>
-                    <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>เมนู2</Link>
+                <div className={`d-lg-flex d-none col-4`} >
+                    <Link href='#' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>เมนู1</Link>
+                    <Link href='#webproject' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>WebProject</Link>
                     <div className={`${style.btn_dropdown_performance}`}>
-                        <Link href='#' className="px-xl-5 px-md-4 px-sm-2 nav-link dropdown-toggle">
+                        <Link href='#' className="px-xl-5 px-md-3 px-sm-2 nav-link dropdown-toggle">
                             ผลงาน </Link>
                         <div className={`${style.dropdown_performance}`}>
                             <Link href="#" className="nav-link px-3 py-2">Project in university</Link>
@@ -56,7 +56,7 @@ export default function Header() {
                 </div>
 
                 {/* phone */}
-                <div className="d-md-none d-flex toggler">
+                <div className="d-lg-none d-flex toggler">
                     <input id="dropdown" type="checkbox" className={`${style.dropdown_btn}`} />
                     <button className={`${style.toggle} `} type="checkbox" onClick={switchDropdown}>
                         <span className={`${style.first} ${style.common}`}></span>
@@ -85,18 +85,18 @@ export default function Header() {
                     </div>
                 </div>
 
-                <Link href="/" className={`navbar-brand ${style.header_logo} fs-4`}>ptsweb</Link>
+                <Link href="/" className={`navbar-brand ${style.header_logo} fs-4 `}>ptsweb</Link>
 
-                <div className="d-flex d-md-none">
+                <div className="d-flex d-lg-none">
                     <Link href="#" className="nav-link bi bi-search px-2"
                         onClick={switchSearch}></Link>
                     <Link href="https://github.com/PPortler" className="nav-link bi bi-github px-2"></Link>
                 </div>
 
-                <div className={`d-md-flex d-none`}>
-                    <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`} onClick={switchSearch}>ค้นหา</Link>
-                    <Link href='https://github.com/PPortler' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>github</Link>
-                    <Link href='#' className={`nav-link px-xl-5 px-md-4 px-sm-2`}>ติดต่อ</Link>
+                <div className={`d-lg-flex d-none col-4`}>
+                    <Link href='#' className={`nav-link px-xl-5 px-md-3 px-sm-2`} onClick={switchSearch}>ค้นหา</Link>
+                    <Link href='https://github.com/PPortler' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>github</Link>
+                    <Link href='#contact' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>ติดต่อ</Link>
                 </div>
 
                 {/* Search */}

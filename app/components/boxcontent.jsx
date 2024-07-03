@@ -1,16 +1,11 @@
-"use client"
+
 
 import style from './styles/boxcontent.module.css'
 import Image from 'next/image'
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 export default function Boxcontent() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-        AOS.refresh();
-    }, []);
+
     return (
         <div className='container d-flex flex-column flex-md-row mt-5 '>
             <div className={`px-2 col-md-4 mt-3 mt-md-0`} data-aos="fade-right">
@@ -34,7 +29,7 @@ export default function Boxcontent() {
                     <p className='mt-2'>ทีมงานจะลงข้อมูลติดต่อของคุณให้ครบถ้วน ให้คุณ ไม่พลาดโอกาสทางการโปรโมทธุรกิจ เช่น เบอร์ติดต่อ, Social Network รวมถึงข้อมูล SEO เบื้องต้นด้วย</p>
                 </div>
             </div>
-    
+            <div></div>
         </div>
     )
 }
