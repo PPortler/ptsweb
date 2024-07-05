@@ -3,30 +3,62 @@
 }
 .box{
     padding: 1.2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.44);
+    box-shadow: 0 0 10px orange;
     border-radius: 10px;
     transition: .5s ease;
     background-color: #ffe845 ;
+    position: relative;
+    z-index: 1;
 }
 .box:hover{
-    transform: translateY(-5%);
-    z-index: 1;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0 50px orange;
 }
 
 .box_img{
     width: 100%;
-    height: 45%;
+    height: 80%;
 }
 .box button{
     padding: .7rem;
-    border: solid black 3px;
+    border: solid orange 3px;
     background: none;
-    border-radius: 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+    position: relative;
+    overflow: hidden;
     transition: .5s ease;
 }
-.box button:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.70);
+.box button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: orange;
+    transition: .5s ease;
+    z-index: -1;
 }
+.box:hover button::before{
+    left: 0;
+    right: unset;
+    width: 100%;
+}
+.box:hover button{
+    color: black;
+    border: orange solid 3px;
+    box-shadow: 0 0 20px orange;
+}
+
+
+/* .box_slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+}
+.box:hover .box_slider{
+    opacity: 1;
+} */

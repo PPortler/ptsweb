@@ -6,6 +6,7 @@ import Textdetail from "./components/textdetail";
 import Boxcontent from './components/boxcontent';
 import Contact from './components/contact';
 import WebProject from './components/webProject';
+import MySkills from './components/myskills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Textdetail />
       <Boxcontent />
       <WebProject />
+      <MySkills />
       <Contact />
     </div>
   );
