@@ -55,7 +55,7 @@ export default function Maincpn() {
                     </div>
                     <div className='carousel-item'>
                         <Link href="#" className="nav-link">
-                            <h4 className='h3 text-center mb-3'>เว็บไซต์ การ์ตูน</h4>
+                            <h4 className='h3 text-center mb-3'>เว็บไซต์ อ่านการ์ตูน</h4>
                             <Image src="/image/poster_main_1.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster2' priority></Image>
                         </Link>
                     </div>

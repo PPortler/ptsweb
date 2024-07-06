@@ -29,6 +29,21 @@ export default function MySkills() {
             level: "ระดับกลาง"
         },
         {
+            image: "/image/nodejs.png",
+            title: "Node Js",
+            level: "พื้นฐาน"
+        },
+        {
+            image: "/image/mysql.png",
+            title: "My SQL",
+            level: "พื้นฐาน"
+        },
+        {
+            image: "/image/mongodb.png",
+            title: "Mongo DB",
+            level: "เริ่มต้น"
+        },
+        {
             image: "/image/bootstrap.png",
             title: "Bootstrap",
             level: "ดีเยี่ยม"
@@ -51,14 +66,14 @@ export default function MySkills() {
         {
             image: "/image/kotlin.png",
             title: "Kotlin",
-            level: "พื้นฐาน"
+            level: "เริ่มต้น"
         },
         
     ]
     return (
         <div id="myskills" className={`container d-flex flex-column align-items-center mt-5 pt-3`} data-aos='fade-up'>
-            <h1 style={{ color: "#01579b" }} className='fw-bolder' data-aos='fade' >My Skills</h1>
-            <p data-aos='flip-down' className='text-center'>Portfolio My Website etc Lorem ipsum dolor sit amet.</p>
+            <h1 style={{ color: "#01579b" }} className='fw-bolder' data-aos='fade' >ทักษะ</h1>
+            <p data-aos='flip-down' className='text-center'>ทักษะที่ฉันได้เรียนรู้ สามารถ click หรือ hover เพื่อดูการประเมินตัวเองของฉันได้.</p>
             <div className={`${style.box} d-flex flex-wrap justify-content-center mt-4`} >
                 {myskills.map((skill,index) => (
                     <div key={index} className={`col-lg-2 col-6 col-sm-4 col-md-3 p-2 `} data-aos='fade-up'>

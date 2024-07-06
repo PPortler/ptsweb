@@ -41,33 +41,32 @@ export default function Header() {
         <div className={` border-bottom border-3 border-black ${style.header_main} fs-5 position-fixed w-100 top-0 py-2 py-sm-3`}>
             <div className="container d-flex justify-content-between align-items-center">
                 <div className={`d-lg-flex d-none col-4`} >
-                    <Link href='#' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>เมนู1</Link>
-                    <Link href='#webproject' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>WebProject</Link>
+                    <Link href='#main' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>หน้าหลัก</Link>
+                    <Link href='#webproject' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>เว็บโปรเจ็ค</Link>
                     <div className={`${style.btn_dropdown_performance}`}>
-                        <Link href='#' className="px-xl-5 px-md-3 px-sm-2 nav-link dropdown-toggle">
-                            ผลงาน </Link>
-                        <div className={`${style.dropdown_performance}`}>
+                        <Link href='#skills' className="px-xl-4 px-md-3 px-sm-2 nav-link" style={{whiteSpace:'nowrap'}}>ทักษะ</Link>
+                        {/* <div className={`${style.dropdown_performance}`}>
                             <Link href="#" className="nav-link px-3 py-2">Project in university</Link>
                             <Link href="#" className="nav-link p-3 py-2">Project work</Link>
                             <Link href="#" className="nav-link p-3 py-2">Project all</Link>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
 
                 {/* phone */}
-                <div className="d-lg-none d-flex toggler">
+                <div className="d-lg-none d-flex toggler ">
                     <input id="dropdown" type="checkbox" className={`${style.toggle_check}`} />
                     <button className={`${style.toggle}`} onClick={switchDropdown}>
                         <span className={`${style.line} ${style.line_first}`}></span>
                         <span className={`${style.line} ${style.line_second}`}></span>
                         <span className={`${style.line} ${style.line_third}`}></span>
                     </button>
-                    <div className={style.toggle_menu}>
-                        <Link href="#" className={`${style.toggle_item} bi-facebook`}></Link>
-                        <Link href="#" className={`${style.toggle_item} bi-facebook`}></Link>
-                        <Link href="#webproject" className={`${style.toggle_item} bi bi-card-heading`}></Link>
-                        <Link href="#contact" className={`${style.toggle_item} bi bi-person-lines-fill`}></Link>
+                    <div className={`${style.toggle_menu}`}>
+                        <Link href="#main" className={`${style.toggle_item} bi bi-house-fill`} onClick={switchDropdown}></Link>
+                        <Link href="#webproject" className={`${style.toggle_item} bi bi-card-heading`} onClick={switchDropdown}></Link>
+                        <Link href="#skills" className={`${style.toggle_item} bi bi-rocket-takeoff`} onClick={switchDropdown}></Link>
+                        <Link href="#contact" className={`${style.toggle_item} bi bi-person-lines-fill`} onClick={switchDropdown}></Link>
                     </div>
                 </div>
 
@@ -76,13 +75,12 @@ export default function Header() {
                 <div className="d-flex d-lg-none">
                     <Link href="#" className="nav-link bi bi-search px-2"
                         onClick={switchSearch}></Link>
-                    <Link href="https://github.com/PPortler" className="nav-link bi bi-github px-2"></Link>
+
                 </div>
 
-                <div className={`d-lg-flex d-none col-4`}>
-                    <Link href='#' className={`nav-link px-xl-5 px-md-3 px-sm-2`} onClick={switchSearch}>ค้นหา</Link>
-                    <Link href='https://github.com/PPortler' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>github</Link>
-                    <Link href='#contact' className={`nav-link px-xl-5 px-md-3 px-sm-2`}>ติดต่อ</Link>
+                <div className={`d-lg-flex d-none col-4 justify-content-end`}>
+                    <Link href='#' className={`nav-link px-xl-4 px-md-3 px-sm-2`} onClick={switchSearch} style={{whiteSpace:'nowrap'}}>ค้นหา</Link>
+                    <Link href='#contact' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>ติดต่อ</Link>
                 </div>
 
                 {/* Search */}

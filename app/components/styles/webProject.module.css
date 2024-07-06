@@ -3,7 +3,7 @@
 }
 .box{
     padding: 1.2rem;
-    box-shadow: 0 0 10px orange;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.44);
     border-radius: 10px;
     transition: .5s ease;
     background-color: #ffe845 ;
@@ -20,7 +20,7 @@
 }
 .box button{
     padding: .7rem;
-    border: solid orange 3px;
+    border: solid black 3px;
     background: none;
     border-radius: 10px;
     transition: .5s ease;

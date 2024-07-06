@@ -17,12 +17,17 @@ export default function Home() {
   }, []);
   return (
     <div>
+      <div id='main'></div>
       <Maincpn />
-      <Textdetail />
+      {/* <Textdetail /> */}
       <Boxcontent />
+      <div id='webproject'></div>
       <WebProject />
+      <div id='skills'></div>
       <MySkills />
+      <div id='contact'></div>
       <Contact />
+      <div className='mt-5 pt-5'></div>
     </div>
   );
 }
