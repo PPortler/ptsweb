@@ -96,11 +96,11 @@ export default function WebProject() {
             <div className={`${style.box_list} d-flex flex-wrap mt-4`}>
                 {data.map((data, index) => (
                     <div key={index} className={` col-lg-4 col-md-6 p-2`} data-aos='fade-up'>
-                        <Link href={data.url} className={`nav-link d-flex flex-column align-items-center ${style.box} `}>
+                        <Link href={data.url} className={`nav-link d-flex flex-column align-items-center p-3 ${style.box} `}>
                             <Image src={data.photo} className={`${style.box_img}`} height={1000} width={1000} alt='website' priority></Image>
                             <h4 className='mt-4 text-center'>{data.title}</h4>
                             <p className='text-center' >{data.detail}</p>
-                            <button className={`mt-2`}>ดูเว็บไซต์</button>
+                            <button className={``}>ดูเว็บไซต์</button>
                         </Link>
                     </div>
                 ))}
