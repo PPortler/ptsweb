@@ -38,13 +38,13 @@ export default function Header() {
 
     }, [])
     return (
-        <div className={` border-bottom border-3 border-black ${style.header_main} fs-5 position-fixed w-100 top-0 py-2 py-sm-3`}>
+        <div className={` ${style.header_main} fs-5 position-fixed w-100 top-0 py-2 py-sm-3`}>
             <div className="container d-flex justify-content-between align-items-center">
                 <div className={`d-lg-flex d-none col-4`} >
-                    <Link href='#main' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>หน้าหลัก</Link>
-                    <Link href='#webproject' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>เว็บโปรเจ็ค</Link>
+                    <Link href='#main' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>Home</Link>
+                    <Link href='#webproject' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>Project</Link>
                     <div className={`${style.btn_dropdown_performance}`}>
-                        <Link href='#skills' className="px-xl-4 px-md-3 px-sm-2 nav-link" style={{whiteSpace:'nowrap'}}>ทักษะ</Link>
+                        <Link href='#skills' className="px-xl-4 px-md-3 px-sm-2 nav-link" style={{whiteSpace:'nowrap'}}>Skills</Link>
                         {/* <div className={`${style.dropdown_performance}`}>
                             <Link href="#" className="nav-link px-3 py-2">Project in university</Link>
                             <Link href="#" className="nav-link p-3 py-2">Project work</Link>
@@ -79,8 +79,8 @@ export default function Header() {
                 </div>
 
                 <div className={`d-lg-flex d-none col-4 justify-content-end`}>
-                    <Link href='#' className={`nav-link px-xl-4 px-md-3 px-sm-2`} onClick={switchSearch} style={{whiteSpace:'nowrap'}}>ค้นหา</Link>
-                    <Link href='#contact' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>ติดต่อ</Link>
+                    <Link href='#' className={`nav-link px-xl-4 px-md-3 px-sm-2`} onClick={switchSearch} style={{whiteSpace:'nowrap'}}>Search</Link>
+                    <Link href='#contact' className={`nav-link px-xl-4 px-md-3 px-sm-2`} style={{whiteSpace:'nowrap'}}>Contact</Link>
                 </div>
 
                 {/* Search */}
@@ -88,7 +88,7 @@ export default function Header() {
                 <div className={`${style.search} border-top border-bottom border-black border-3`}>
                     <div className={`input-group `}>
                         <button className={`bi bi-x-lg ${style.search_btn_close} px-3 fs-2 text-black`} onClick={switchSearch}></button>
-                        <input type="text" className="form-control rounded-0 py-3" placeholder="คุณต้องการค้นหาอะไร ?" />
+                        <input type="text" className="form-control rounded-0 py-3" placeholder="What do you want to search ?" />
                         <button className={`rounded-0 px-3 ${style.search_btn}`}><i className="bi bi-arrow-right fs-2"></i></button>
                     </div>
                 </div>

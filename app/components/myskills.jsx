@@ -6,74 +6,74 @@ export default function MySkills() {
         {
             image: "/image/html-5.png",
             title: "HTML 5",
-            level: "ดีเยี่ยม"
+            level: "Advanced"
         },
         {
             image: "/image/css-3.png",
             title: "CSS 3",
-            level: "ดีเยี่ยม"
+            level: "Advanced"
         },
         {
             image: "/image/js.png",
             title: "JavaScript",
-            level: "ระดับกลาง"
+            level: "Medium"
         },
         {
             image: "/image/react.png",
             title: "React Js",
-            level: "ระดับกลาง"
+            level: "Medium"
         },
         {
             image: "/image/nextjs.webp",
             title: "Next Js",
-            level: "ระดับกลาง"
+            level: "Medium"
         },
         {
             image: "/image/nodejs.png",
             title: "Node Js",
-            level: "พื้นฐาน"
+            level: "Basic"
         },
         {
             image: "/image/mysql.png",
             title: "My SQL",
-            level: "พื้นฐาน"
+            level: "Basic"
         },
         {
             image: "/image/mongodb.png",
             title: "Mongo DB",
-            level: "เริ่มต้น"
+            level: "Beginner"
         },
         {
             image: "/image/bootstrap.png",
             title: "Bootstrap",
-            level: "ดีเยี่ยม"
+            level: "Advanced"
         },
         {
             image: "/image/python.png",
             title: "Python",
-            level: "ระดับดี"
+            level: "Good"
         },
         {
             image: "/image/java.png",
             title: "Java",
-            level: "พื้นฐาน"
+            level: "Basic"
         },
         {
             image: "/image/c.png",
             title: "C Language",
-            level: "พื้นฐาน"
+            level: "Basic"
         },
         {
             image: "/image/kotlin.png",
             title: "Kotlin",
-            level: "เริ่มต้น"
+            level: "Beginner"
         },
         
     ]
     return (
         <div id="myskills" className={`container d-flex flex-column align-items-center mt-5 pt-3`} data-aos='fade-up'>
-            <h1 style={{ color: "#01579b" }} className='fw-bolder' data-aos='fade' >ทักษะ</h1>
-            <p data-aos='flip-down' className='text-center'>ทักษะที่ฉันได้เรียนรู้ สามารถ click หรือ hover เพื่อดูการประเมินตัวเองของฉันได้.</p>
+            <h1 style={{ color: "#01579b" }} className='fw-bolder' data-aos='fade' >Skills</h1>
+            <p data-aos='fade-up' className='text-center'>The skills I have learned can be clicked or hovered to view my self-evaluation.</p>
             <div className={`${style.box} d-flex flex-wrap justify-content-center mt-4`} >
                 {myskills.map((skill,index) => (
                     <div key={index} className={`col-lg-2 col-6 col-sm-4 col-md-3 p-2 `} data-aos='fade-up'>

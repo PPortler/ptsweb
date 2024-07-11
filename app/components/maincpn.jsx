@@ -29,10 +29,10 @@ export default function Maincpn() {
             </div> */}
 
             <div style={{ width: "max-content" }}>
-                <h1 className='container fs-lg-1' data-aos="fade">ทำ เ ว็ บ อ ะ ไ ร ดี ?</h1>
+                <h1 className='container fs-lg-1' data-aos="fade">M y P o r t f o l i o.</h1>
                 <div className={`${style.maincpn_p_group} mt-3 bg-dark text-white p-2 p-sm-3 `} data-aos="fade-up">
-                    <p className=' m-0 '>console.log(<span style={{ color: "orange" }}>"รับเขียนเว็บไซต์ ตามความต้องการ"</span>);</p>
-                    <p className=' m-0'>console.log(<span style={{ color: "orange" }}>"หรือ ตัดไฟล์ รูป photoshop, adobe, figma etc. เป็น website"</span>);</p>
+                    <p className=' m-0 '>console.log(<span style={{ color: "orange" }}>"Your welcome to my website."</span>);</p>
+                    <p className=' m-0'>console.log(<span style={{ color: "orange" }}>"This website is a website that collects my work."</span>);</p>
                 </div>
             </div>
 
@@ -49,19 +49,19 @@ export default function Maincpn() {
                 <div className='carousel-inner'>
                     <div className='carousel-item active'>
                         <Link href="#" className='nav-link'>
-                            <h4 className='h3 text-center mb-3 '>เว็บไซต์ โปรโมท</h4>
+                            <h4 className='h3 text-center mb-3 '>Promote Tourism.</h4>
                             <Image src="/image/poster_main_3.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster1' priority></Image>
                         </Link>
                     </div>
                     <div className='carousel-item'>
                         <Link href="#" className="nav-link">
-                            <h4 className='h3 text-center mb-3'>เว็บไซต์ อ่านการ์ตูน</h4>
+                            <h4 className='h3 text-center mb-3'>Read Comics.</h4>
                             <Image src="/image/poster_main_1.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster2' priority></Image>
                         </Link>
                     </div>
                     <div className='carousel-item'>
                         <Link href="#" className='nav-link'>
-                            <h4 className='h3 text-center mb-3'>เว็บไซต์ Portfolio</h4>
+                            <h4 className='h3 text-center mb-3'>Portfolio Website.</h4>
                             <Image src="/image/poster_main_2.png" height={1000} width={1000} className={`${style.maincpn_model_img} `} alt='link-poster3' priority></Image>
                         </Link>
                     </div>

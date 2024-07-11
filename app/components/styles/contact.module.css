@@ -6,3 +6,30 @@
 .contact h1{ 
     color: #06c755;
 }
+.btn_contact{
+    padding: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s ease !important;   
+}
+.btn_github{
+    background-color: #6b6af2;
+    color: white;
+    box-shadow: 0 0 5px #6b6af2;
+}
+.btn_tiktok{
+    background-color: rgb(22, 24, 35);
+    color: white;
+    box-shadow: 0 0 5px rgb(22, 24, 35);
+}
+.btn_instagram{
+    background-color: #e40233;
+    color: white;
+    box-shadow: 0 0 5px #e40233;
+}
+
+.btn_contact:hover{
+    box-shadow: 0 0 20px orange !important;
+}
